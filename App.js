@@ -12,10 +12,11 @@ import {
   View,
   ScrollView,
 } from "react-native";
+
 // import { useFonts } from 'expo-font';
 import Task from "./components/Task";
 
-export default function App() {
+const App = () => {
   const [task, setTask] = useState();
   const [taskItems, setTaskItems] = useState([]);
 
@@ -78,7 +79,7 @@ export default function App() {
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -143,3 +144,5 @@ const styles = StyleSheet.create({
     fontSize: 50,
   },
 });
+
+export default App;
